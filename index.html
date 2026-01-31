@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portofilo</title>
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div id="loadingScreen" class="loadingScreen">
+        <div class="loader">
+            <h3>My Portfolio</h3>
+        </div>
+    </div>
+
+    <div class="navbar navbar-expand-sm  navbar-light  sticky-top bg-light" id="mainContent" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-11">
+                    <a href="#" class="navbar-brand">Hen Sokkong /<span class="text-portofilo"> portofilo</span></a>
+                    <!-- Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#colNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="col-lg-1 collapse navbar-collapse" id="colNav">
+                    <ul class="navbar-nav nav-tab">
+
+                        <li class="nav-item"><a href="#About" class="nav-link "> About </a></li>
+                        <li class="nav-item"><a href="#Project" class="nav-link "> Project </a></li>
+                        <li class="nav-item"><a href="#Contact" class="nav-link "> Contact </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- end container -->
+    </div> <!--End Nav Bar-->
+    <div class="tab contain" id="tab" style="display:none;">
+
+
+        <div class=" tab-pane container " id="About">
+            <div class="row css-first-page align-items-center">
+
+
+                <div class="col-md-6 order-2 order-md-1 decribe-profile mt-3">
+                    <div class=" mt-3">
+                        <div class="p-4 shadow-sm">
+                            <h1>Hello, I'm</h1>
+                            <h1>Hen Sokkong</h1>
+                            <p>I’m a beginner front-end developer learning to build clean and responsive web interfaces.
+                                I enjoy turning designs into real websites and improving my skills by building small
+                                projects.</p>
+                            <!-- buttons -->
+                            <div> <a class="btn btn-warning btn-download" href="file-download/CV-Hensokkong (2).pdf"
+                                    download> <svg class="material-symbols-outlined" xmlns="http://www.w3.org/2000/svg"
+                                        height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f1f1f">
+                                        <path
+                                            d="M264-109q-29.7 0-50.85-21.15Q192-151.3 192-181v-624q0-29.7 21.15-50.85Q234.3-877 264-877h312l192 192v288h-72v-240H528v-168H264v624h336v72H264Zm586 13L744-202v81h-72v-204h204v72h-82l106 106-50 51Zm-586-85v-624 624Z" />
+                                    </svg> Download CV </a> <a href="#Project"
+                                    class="btn btn-outline-warning btn-view-project"> View Projects </a> </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 order-1 order-md-2 text-center parent-img-profile">
+                    <div class="orbit-ring img-profil"></div>
+                    <img src="img/ChatGPT Image Jan 31, 2026, 01_36_39 AM.png" alt="my pic"
+                        class="my-img mt-3 rounded-circle img-fluid">
+                </div>
+
+            </div>
+            <!--end row-->
+
+        </div> <!--end container-->
+        <!--portfolio showcase-->
+        <div class="tab-pane container d-flex  justify-content-center align-item-center css-page-2" id="Project">
+            <h1>
+                portfolio showcase
+            </h1>
+
+
+        </div> <!--container-->
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12 text-center">
+
+                    <!--button-->
+                    <div class="col-md-12 gap-2 d-flex  mt-5 box-button">
+                        <button class="btn btn-outline-warning flex-fill big-btn text-dark js-btn-sh-pro">
+                            Projects <span class="js-quantity-project"> 0 </span> 
+                        </button>
+
+
+                        <button class="btn btn-outline-warning flex-fill big-btn text-dark js-btn-sh-tech">
+                            Tech Stack
+                        </button>
+
+
+                    </div>
+                    <!--project-->
+
+
+                </div> <!--col-12-->
+                <!--Hold project and tech stack-->
+
+                <div class="col-md-12 mt-3 ">
+                    <div class="row text-center d-flex justify-content-center gap-2">
+                        <!--parent display project-->
+                        <div class=" " id="hold-project-exper" style="display: none;">
+                            <!--display text-->
+                            <div class="row js-projects">
+
+
+                                <!-- <div class="col-md-5 hold-each-item js-item">
+                                   <img src="img/project/Screenshot 2026-01-31 171108.png" alt="my project"
+                                        class=" my-project-img">
+                                    <h3 class="mt-2">E-Commerc</h3>
+                                    <p>this project i'm focus on how to ,manage data_item, Cart , calculate total amount
+                                        ,
+                                        place
+                                        order , review ordered , tracking order arriving
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a href="#link" class="d-flex align-items-center gap-2 text-decoration-none">
+                                            <span>Live Demo</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                               
+                                </div> col-5-each-item-->
+
+                            </div><!--row-->
+                        </div> <!--col-5-->
+
+                        <!--hold tecj stack-->
+                        <div class="col-md-12 text-center" id="hold-tech-exper" style="display: none;">
+                            <div class="row ">
+                                <div class="col-6 col-md-3 mt-2">
+                                    <div class="hold-tech-stack">
+                                        <img src="img/tech_stack/html.svg" alt="bootstrap-img">
+                                        <h4 class="mt-2">HTML</h4>
+                                    </div>
+                                </div> <!--col-md-2-->
+                                <div class=" col-6 col-md-3 mt-2">
+                                    <div class="hold-tech-stack">
+                                        <img src="img/tech_stack/css.svg" alt="bootstrap-img">
+                                        <h4 class="mt-2">CSS</h4>
+                                    </div>
+                                </div> <!--col-md-2-->
+                                <div class="col-6 col-md-3 mt-2">
+                                    <div class="hold-tech-stack">
+                                        <img src="img/tech_stack/javascript.svg" alt="bootstrap-img">
+                                        <h4 class="mt-2">Javasript</h4>
+                                    </div>
+                                </div> <!--col-md-2-->
+                                <div class="col-6 col-md-3 mt-2">
+                                    <div class="hold-tech-stack">
+                                        <img src="img/tech_stack/bootstrap.svg" alt="bootstrap-img">
+                                        <h4 class="mt-2">Boostrap</h4>
+                                    </div>
+                                </div> <!--col-md-2-->
+                                <div class="col-6 col-md-3 mt-2">
+                                    <div class="hold-tech-stack">
+                                        <img src="img/tech_stack/github.svg" alt="bootstrap-img">
+                                        <h4 class="mt-2">Github</h4>
+                                    </div>
+                                </div> <!--col-md-2-->
+                                <div class="col-6 col-md-3 mt-2">
+                                    <div class="hold-tech-stack">
+                                        <img src="img/tech_stack/vercel.svg" alt="bootstrap-img">
+                                        <h4 class="mt-2">Vercel</h4>
+                                    </div>
+                                </div> <!--col-md-2-->
+                            </div>
+                        </div><!--end Hold tech-->
+
+                    </div> <!--row-->
+                </div> <!--container-->
+            </div>
+
+
+
+        </div> <!-- Row -->
+
+        <div class="tab-pane container css-page-3" id="Contact">
+            <div class="text-center">
+                <h2>Get In Thouch</h2>
+                <p class="mt-2">I'm looking for an internship Web Developer. Let's
+                    connect and discuss how I can contribute to your team.
+                </p>
+            </div>
+
+
+            <div class="row contact-wraper text-center d-flex justify-content-center gap-2">
+
+                <div class="col-md-4  mt-5  ">
+                    <div class="row">
+                        <div class="col-md-12 hold-info-contact">
+                            <div class=" text-hire-me">
+                                <label for="Telegram">Hire me</label>
+                            </div>
+                            <div class="contact-card mt-2">
+                                <div class="contact-icon" id="Telegram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="#1f1f1f">
+                                        <path
+                                            d="M640-520v-120H520v-80h120v-120h80v120h120v80H720v120h-80Zm158 400q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+                                    </svg>
+                                </div>
+
+
+                                <div class="contact-text d-flex flex-column lh-sm">
+                                    <p id='copy-my-Text' class="my-phone">Let's Talk</p>
+                                    <a href="javascript:void(0)" onclick="copytext();return false;">
+                                        +855 89979157
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#1f1f1f">
+                                            <path
+                                                d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div> <!--contact card-->
+                        </div> <!--col-12-->
+                        <div class="col-md-12 email-border-bottom">
+
+                            <div class="contact-card mt-2">
+                                <div class="contact-icon" id="Telegram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="#1f1f1f">
+                                        <path
+                                            d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+                                    </svg>
+                                </div>
+
+
+                                <div class="contact-text d-flex flex-column lh-sm">
+                                    <p id='copy-my-Text' class="my-email">Email me</p>
+                                    <a href="mailto:sokkonghen05@gmail.com">
+                                        sokkonghen05@gmail.com
+
+                                    </a>
+                                </div>
+                            </div> <!--contact card-->
+                        </div> <!--col-12-->
+                        <div class="col-4 col-md-3 follow-me-parent mt-2">
+                            <div class=" follow-me mt-2">
+                                <label for="follow-me">Follow Me</label>
+                            </div>
+                            <div class=" mt-5 hold-link-git">
+                                <div class="follow-me-icon " id="follow-me">
+                                    <a href="https://github.com/hensokkong">
+                                        <img src="img/tech_stack/github.svg" alt="github">
+                                    </a>
+                                </div>
+                            </div> <!--contact card-->
+                        </div> <!--col-12-->
+                        <div class="col-2 col-md-2 linkedin-parent mt-2">
+                            <div class=" mt-5 hold-link-git">
+                                <div class="linkedin-icon " id="follow-me">
+                                    <a href="https://www.linkedin.com/in/hen-sokkong-7b0252335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                        class="social-icon-linkedin">
+                                        <i class="fa-brands fa-linkedin fa-3x"></i>
+                                    </a>
+                                </div>
+                            </div> <!--contact card-->
+                        </div> <!--col-12-->
+                        <div class="col-7 col-md-8 download-cv-parent mt-2">
+                            <div class=" mt-5 hold-link-git">
+                                <div class="btn-download-cv-icon" id="follow-me">
+                                    <a class="btn btn-warning btn-download-cv"
+                                        href="file-download/CV-Hensokkong (2).pdf" download>
+
+                                        <svg class="material-symbols-outlined" xmlns="http://www.w3.org/2000/svg"
+                                            height="20px" viewBox="0 -960 960 960" width="20px" fill="#1f1f1f">
+                                            <path
+                                                d="M264-109q-29.7 0-50.85-21.15Q192-151.3 192-181v-624q0-29.7 21.15-50.85Q234.3-877 264-877h312l192 192v288h-72v-240H528v-168H264v624h336v72H264Zm586 13L744-202v81h-72v-204h204v72h-82l106 106-50 51Zm-586-85v-624 624Z" />
+                                        </svg>
+                                        Download CV
+                                    </a>
+                                </div>
+                            </div> <!--contact card-->
+                        </div> <!--col-12-->
+                    </div>
+
+                </div> <!--col-6-->
+                <div class="col-md-4  mt-5">
+                    <span class="emoji float-emoji" style=" left: 10%;">✉️</span>
+
+                </div> <!--col-6-->
+
+            </div>
+
+        </div>
+
+    </div> <!--end tab -->
+
+
+    </div> <!--container page 2-->
+    <!--container page 3-->
+
+
+    </div> <!--tap-content -->
+    </div>
+    <footer class="footer mt-4" id="footer" style="display: none;">
+        <div class="footer-content">
+            <p>© 2026 All rights reserved by Hen Sokkong.</p>
+
+            <div class="footer-links">
+                <a href="#About">About</a>
+                <a href="#Project">Projects</a>
+                <a href="#Contact">Contact</a>
+                <a href="https://github.com/hensokkong" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/hen-sokkong-7b0252335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!--script-->
+    <script type="module" src="script/loading.js"></script>
+    <script>
+        let text = document.getElementById('copy-my-Text');
+        function copytext() {
+            navigator.clipboard.writeText('+855 89979157');
+            text.textContent = 'Copied';
+            setTimeout(() => {
+                text.textContent = 'My Telegram';
+            }, 3000)
+        };
+
+    </script>
+</body>
+
+</html>
