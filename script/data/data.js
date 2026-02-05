@@ -7,7 +7,20 @@ export const project=[
       link:'https://e-commerc-zeta.vercel.app/',
 
     },
+    {
+      quantity: 1,
+      image: 'img/project/weather.png',
+      name:'Weather',
+      describe: 'A weather website calls API from Open Weather 2.5',
+      link:'https://weather-sokkong.vercel.app/',
+
+    },
      
+]
+
+export const techstack=[
+
+   
 ]
 
 export function countProject(){

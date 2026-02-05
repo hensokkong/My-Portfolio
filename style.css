@@ -214,6 +214,9 @@ animation: float 1.5s ease-in-out infinite;
 .my-phone{
     padding-right: 75px;
 }
+.my-telegram{
+  padding-right: 180px;
+}
 .my-email{
    padding-right: 180px;
 }
@@ -266,7 +269,7 @@ animation: float 1.5s ease-in-out infinite;
 .social-icon-linkedin{
     width: 48px;
     height: 48px;
-    background: #050607; /* LinkedIn blue */
+    background: #050607; 
     color: #fff;
     display: flex;
     align-items: center;
@@ -347,7 +350,7 @@ animation: float 1.5s ease-in-out infinite;
 }
 
 .footer-links a:hover {
-  color: #38bdf8; /* accent color */
+  color: #38bdf8; 
 }
 
 
